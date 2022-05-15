@@ -1,0 +1,29 @@
+# Write a program to find number of occurrence of sub string
+
+package Assessment3;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class OccurrenceString {
+     static int a1;
+    public static int occurrence(String s1,String s2) {
+        String a[]=s1.split(s2,-1);
+        a1=a.length-1;
+        return a1;
+    }
+
+    public static void main(String args[]){
+        Scanner s= new Scanner(System.in);
+
+        System.out.println("enter the String:");
+        String str1=s.next();
+
+        System.out.println("enter the sub String:");
+        String str2=s.next();
+
+        occurrence(str1,str2);
+        System.out.println(a1);
+    }
+}
+
